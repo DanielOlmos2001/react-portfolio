@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.db2ea8b5.css",
+    "main.js": "/react-portfolio/static/js/main.74dc287d.js",
+    "static/media/background.jpg": "/react-portfolio/static/media/background.e1ba371f1437df4960f2.jpg",
+    "static/media/marketing.jpg": "/react-portfolio/static/media/marketing.876268f85acf1ad27502.jpg",
+    "static/media/profile.png": "/react-portfolio/static/media/profile.a455957e0d790aeb314f.png",
+    "static/media/Profuturo.png": "/react-portfolio/static/media/Profuturo.dc6a46977dfed5cd8501.png",
+    "static/media/web-dev.jpg": "/react-portfolio/static/media/web-dev.f13ad3903df0828a4f92.jpg",
+    "static/media/ux-design.jpg": "/react-portfolio/static/media/ux-design.115136682cee2e4925b3.jpg",
+    "static/media/ineajson.jpg": "/react-portfolio/static/media/ineajson.2024c4e267210ababcb9.jpg",
+    "static/media/juntadecabeza.jpg": "/react-portfolio/static/media/juntadecabeza.e83d0fa2ac4c7faa907c.jpg",
+    "static/media/algoritmodebaile.png": "/react-portfolio/static/media/algoritmodebaile.a74f46e9e718c5103ea9.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.db2ea8b5.css.map": "/react-portfolio/static/css/main.db2ea8b5.css.map",
+    "main.74dc287d.js.map": "/react-portfolio/static/js/main.74dc287d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db2ea8b5.css",
+    "static/js/main.74dc287d.js"
+  ]
+}
