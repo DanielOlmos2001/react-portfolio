@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = ({ toggleMenu }) => {
@@ -13,10 +14,10 @@ const Header = ({ toggleMenu }) => {
       <div className="header-right-section">
         <nav className="header-nav-menu">
           <ul>
-            <li><a href="/react-portfolio/">Inicio</a></li>
-            <li><a href="/react-portfolio/services">Servicios</a></li>
-            <li><a href="/react-portfolio/projects">Proyectos</a></li>
-            <li><a href="/react-portfolio/contact">Contacto</a></li>
+            <li><Link to="/react-portfolio/">Inicio</Link></li>
+            <li><Link to="/react-portfolio/services">Servicios</Link></li>
+            <li><Link to="/react-portfolio/projects">Proyectos</Link></li>
+            <li><Link to="/react-portfolio/contact">Contacto</Link></li>
           </ul>
         </nav>
       </div>
