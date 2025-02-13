@@ -10,7 +10,7 @@ const Home = () => {
         <img src={profilePic} alt="Perfil" className="home-profile-pic" />
         <h1>¡Bienvenido!</h1>
         <p>Desarrollador apasionado por aprender y crear experiencias digitales diferentes.</p>
-        <a href="/services" className="home-button-discover">Descubrir más</a>
+        <a href="/react-portfolio/services" className="home-button-discover">Descubrir más</a>
       </div>
     </section>
   );

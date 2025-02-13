@@ -13,10 +13,10 @@ const Header = ({ toggleMenu }) => {
       <div className="header-right-section">
         <nav className="header-nav-menu">
           <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/services">Servicios</a></li>
-            <li><a href="/projects">Proyectos</a></li>
-            <li><a href="/contact">Contacto</a></li>
+            <li><a href="/react-portfolio/">Inicio</a></li>
+            <li><a href="/react-portfolio/services">Servicios</a></li>
+            <li><a href="/react-portfolio/projects">Proyectos</a></li>
+            <li><a href="/react-portfolio/contact">Contacto</a></li>
           </ul>
         </nav>
       </div>
