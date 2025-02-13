@@ -1,19 +1,20 @@
+// src/App.js
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./styles/App.css";
 
 import Header from "./generalComponents/header/header.js";
-import Aside  from "./generalComponents/aside/aside.js";
+import Aside from "./generalComponents/aside/aside.js";
 import Footer from "./generalComponents/footer/footer.js";
 
-import Home         from "./views/home/home.js"
-import Services     from "./views/services/services.js"
-import Projects     from "./views/projects/projects.js"
+import Home from "./views/home/home.js";
+import Services from "./views/services/services.js";
+import Projects from "./views/projects/projects.js";
 import AppIneToJson from "./views/projects/ineToJson/components/app/AppIneToJson.js";
-import Peticion     from "./views/projects/ineToJson/components/peticion/peticion.js";
-import Contact      from "./views/contact/contact.js"
+import Peticion from "./views/projects/ineToJson/components/peticion/peticion.js";
+import Contact from "./views/contact/contact.js";
 
-const AppContent = () => {
+const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation(); // Detecta el cambio de ruta
 
@@ -26,7 +27,7 @@ const AppContent = () => {
     if (window.innerWidth < 768) {
       setIsOpen(false);
     }
-  }, [location]); // Se ejecuta solo cuando cambia la ruta
+  }, [location]);
 
   return (
     <div className="App">
@@ -47,10 +48,5 @@ const AppContent = () => {
   );
 };
 
-const App = () => (
-  <Router>
-    <AppContent />
-  </Router>
-);
-
 export default App;
+
