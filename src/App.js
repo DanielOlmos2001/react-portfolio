@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import "./styles/App.css";
 
-function App() {
+import Header from "./generalComponents/header/header.js";
+import Aside  from "./generalComponents/aside/aside.js";
+import Footer from "./generalComponents/footer/footer.js";
+
+import Home         from "./views/home/home.js"
+import Services     from "./views/services/services.js"
+import Projects     from "./views/projects/projects.js"
+import AppIneToJson from "./views/projects/ineToJson/components/app/AppIneToJson.js";
+import Peticion     from "./views/projects/ineToJson/components/peticion/peticion.js";
+import Contact      from "./views/contact/contact.js"
+
+const AppContent = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Detecta el cambio de ruta
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Cerrar el Aside solo si la pantalla es menor a 768px
+  React.useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsOpen(false);
+    }
+  }, [location]); // Se ejecuta solo cuando cambia la ruta
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header toggleMenu={toggleMenu} />
+      <Aside isOpen={isOpen} toggleMenu={toggleMenu} />
+      <main className="App-main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/AppIneToJson" element={<AppIneToJson />} />
+          <Route path="/projects/AppIneToJson/peticion" element={<Peticion />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
-}
+};
+
+const App = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;

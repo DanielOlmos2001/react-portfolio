@@ -1,0 +1,166 @@
+/* ----------------- */
+/* 📌 ESTILOS GENERALES */
+/* ----------------- */
+.projects {
+    text-align: center;
+    padding: 60px 20px;
+    background: #121212; /* Fondo oscuro */
+    color: white;
+}
+
+.projects-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projects-header p {
+    font-size: 18px;
+    color: #b3b3b3;
+}
+
+.projects-header .dot {
+    color: #61dafb; /* Color distintivo del punto */
+}
+
+/* ----------------- */
+/* 📌 CONTENEDOR DE PROYECTOS */
+/* ----------------- */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+/* 📌 Proyecto individual */
+.project, .project-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Añadir espacio entre la imagen y el texto */
+    background: rgba(255, 255, 255);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    padding: 30px; /* Mayor espacio para una mejor estructura */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 📌 Ajuste correcto en `hover` */
+.project:hover, .project-reverse:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* 📌 Imagen del Proyecto */
+.project-image {
+    width: 30%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 📌 Contenido del Proyecto */
+.project-content {
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-content h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #61dafb;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 16px;
+    color: #5f5f5f;
+    margin-bottom: 15px;
+}
+
+.project-content a {
+    display: inline-block;
+    padding-top: 15px;
+    color: #ffa200; /* Naranja intenso */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.project-content a:hover {
+    text-decoration: underline;
+    color: #ffcc66; /* Naranja más claro para efecto visual */
+}
+
+
+/* ----------------- */
+/* 📌 BOTÓN DE PROYECTO */
+/* ----------------- */
+.project-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #61dafb;
+    color: #121212;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-button:hover {
+    background: white;
+    color: #121212;
+    transform: scale(1.05);
+}
+
+/* ----------------- */
+/* 📌 ESTILO PARA ALTERNAR EL ORDEN DE LOS ELEMENTOS */
+/* ----------------- */
+.project-reverse {
+    flex-direction: row-reverse;
+    text-align: right; /* Asegurar que el contenido se alinee correctamente */
+}
+
+.project-reverse .project-content {
+    text-align: left; /* Alinear el texto dentro del contenedor */
+}
+
+/* ----------------- */
+/* 📌 RESPONSIVE DESIGN */
+/* ----------------- */
+@media (max-width: 1024px) {
+    .project, .project-reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 📌 Mantiene el diseño en columna en móviles */
+    .project-reverse {
+        flex-direction: column;
+    }
+
+    .project-reverse .project-content {
+        text-align: center;
+    }
+}

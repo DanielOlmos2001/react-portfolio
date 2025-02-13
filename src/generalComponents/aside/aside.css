@@ -1,0 +1,58 @@
+.aside {
+    position: fixed;
+    top: 0;
+    left: -260px; /* Oculto inicialmente */
+    width: 260px;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.95); /* Color con opacidad para efecto elegante */
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px; /* Espacio para el Header */
+    z-index: 1000; /* Mayor que el contenido, pero menor que el Header */
+    backdrop-filter: blur(8px); /* Efecto de desenfoque */
+}
+
+.aside.open {
+    left: 0; /* Se muestra cuando está abierto */
+}
+
+.aside nav ul {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.aside nav ul li {
+    margin: 5px 0;
+}
+
+.aside nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 12px 18px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.aside nav ul li a:hover {
+    background: #61dafb; /* Rojo intenso */
+    color: white;
+    box-shadow: 0 0 10px rgba(57, 190, 230, 0.5);
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .aside {
+        width: 220px; /* Más compacto en móviles */
+    }
+
+    .aside nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

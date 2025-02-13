@@ -1,0 +1,176 @@
+/* 📌 Estilos generales */
+.header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 60px; 
+    background: #1a1a1a; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+/* 📌 Sección izquierda */
+.header-left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* 📌 Botón de menú hamburguesa */
+.header-hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    display: none; /* Oculto en pantallas grandes */
+}
+
+.header-hamburger:hover {
+    color: #61dafb;
+}
+
+/* 📌 Nombre */
+.header-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #f1f1f1;
+}
+
+.header-name-point {
+    color: #61dafb;
+    font-size: 20px;
+}
+
+/* 📌 Sección derecha - Menú de navegación */
+.header-right-section {
+    margin-right: 80px;
+}
+
+.header-right-section .header-nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right-section .header-nav-menu ul li {
+    display: inline;
+}
+
+.header-right-section .header-nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-right-section .header-nav-menu ul li a:hover {
+    color: #61dafb;
+}
+
+/* -------------------- */
+/* 📌 RESPONSIVE DESIGN */
+/* -------------------- */
+
+/* 🔹 Tablets (1024px o menos) */
+@media (max-width: 1024px) {
+    .header {
+        height: 55px;
+        padding: 8px 12px;
+    }
+
+    .header-hamburger {
+        display: block; /* Mostrar botón hamburguesa */
+        font-size: 26px;
+    }
+
+    .header-name {
+        font-size: 16px;
+    }
+
+    .header-right-section {
+        margin-right: 0;
+    }
+
+    .header-right-section .header-nav-menu {
+        display: none; /* Oculta el menú en tablets */
+    }
+}
+
+/* 🔹 Móviles (768px o menos) */
+@media (max-width: 768px) {
+    .header {
+        height: 50px;
+        padding: 6px 10px;
+    }
+
+    .header-name {
+        font-size: 14px;
+    }
+
+    .header-hamburger {
+        font-size: 24px;
+    }
+
+    .header-right-section {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(26, 26, 26, 0.95);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .header-right-section.open {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .header-right-section .header-nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-right-section .header-nav-menu ul li a {
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        color: white;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .header-right-section .header-nav-menu ul li a:hover {
+        background: #61dafb;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+/* 🔹 Móviles pequeños (480px o menos) */
+@media (max-width: 480px) {
+    .header {
+        height: 45px;
+        padding: 4px 8px;
+    }
+
+    .header-name {
+        font-size: 12px;
+    }
+
+    .header-hamburger {
+        font-size: 22px;
+    }
+}

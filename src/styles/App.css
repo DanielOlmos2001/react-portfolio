@@ -1,0 +1,73 @@
+/* ----------------- */
+/* 📌 ANIMACIONES */
+/* ----------------- */
+
+/* 🎬 Slide-up (Sube desde abajo) */
+@keyframes slideUp {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 📌 Estilos generales */
+.App {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #121212; /* Negro profundo */
+    min-height: 100vh;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out; /* Animación en la carga */
+}
+
+/* 📌 Contenedor Principal */
+.App-main {
+    margin-top: 100px; /* Asegura que el contenido no se oculte detrás del header */
+    padding: 20px;
+    flex: 1;
+    width: 90%; /* Ajuste dinámico */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    animation: slideUp 0.8s ease-in-out; /* Hace que suba al aparecer */
+}
+
+/* ----------------- */
+/* 📌 RESPONSIVE */
+/* ----------------- */
+
+/* 🔹 Tablets (1024px o menos) */
+@media (max-width: 1024px) {
+    .App-main {
+        max-width: 750px;
+        padding: 18px;
+    }
+}
+
+/* 🔹 Móviles (768px o menos) */
+@media (max-width: 768px) {
+    .App-main {
+        max-width: 95%; /* Usa casi todo el ancho disponible */
+        padding: 15px;
+        margin-top: 80px; /* Ajuste menor para evitar espacios vacíos */
+    }
+}
+
+/* 🔹 Móviles pequeños (480px o menos) */
+@media (max-width: 480px) {
+    .App-main {
+        width: 95%;
+        padding: 12px;
+        margin-top: 70px; /* Reduce el margen en pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+}
