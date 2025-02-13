@@ -2,10 +2,9 @@
   "name": "portafolio-ogld",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://danielolmos2001.github.io/react-portfolio/build",
+  "homepage": "https://danielolmos2001.github.io/react-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "react": "^19.0.0",
@@ -18,6 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.2.0",
+    "gh-pages": "^6.3.0"
   }
 }
