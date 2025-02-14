@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import axios from "axios";
 import DropzoneUploader from "../dropzone/dropzone";
-import { FaCopy } from "react-icons/fa";
 import "./peticion.css";
 
 const Peticion = () => {
@@ -83,10 +82,8 @@ const Peticion = () => {
     <div className="peticion-container">
       <h2>Envía una imagen para reconocimiento</h2>
       <p>
-        Envía una imagen al servicio mediante una petición POST a{" "}
-        <span onClick={copyToClipboard} className="copy-url">
-          http://ine-to-json-lapp-identificat-dev.apps.paasprofuturo-d.r6b1.p1.openshiftapps.com/conversiones-ines-a-jsons <FaCopy />
-        </span>
+        Envía una imagen al servicio mediante una petición POST
+        <span onClick={copyToClipboard} className="copy-url"></span>
       </p>
 
       <br />
