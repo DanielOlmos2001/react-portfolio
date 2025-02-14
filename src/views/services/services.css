@@ -114,6 +114,40 @@
     outline: none; /* Elimina el borde al hacer clic */
 }
 
+/* 📌 ESTILO PARA EL CALL TO ACTION */
+.cta-container {
+    margin-top: 40px; /* Espacio sobre el CTA */
+    padding: 20px;
+    background-color: #ff4d4d; /* Un color destacado para el CTA */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 8px 25px rgba(255, 77, 77, 0.5); /* Sombra suave para resaltar */
+}
+  
+.cta-container h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Espacio entre el texto y el botón */
+}
+  
+.cta-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #121212;
+    background-color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.cta-button:hover {
+    background-color: #61dafb; /* Color del botón al pasar el cursor */
+    color: #1a1a1a;
+}
+
 /* ----------------- */
 /* 📌 RESPONSIVE DESIGN */
 /* ----------------- */

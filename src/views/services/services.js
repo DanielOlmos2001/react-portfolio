@@ -56,6 +56,13 @@ const Services = () => {
             </div>
           </div>
         ))}
+
+        <div className="cta-container">
+          <h2>¡Solicita tu primera página web con un 10% de descuento!</h2>
+          <Link to="/contact">
+            <button className="cta-button">¡Aprovecha ahora!</button>
+          </Link>
+        </div>
       </div>
     </section>
   );
