@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { Link } from "react-router-dom";
 import profilePic from "../../assets/profile.png"; // Agrega una imagen en la carpeta assets
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
         <img src={profilePic} alt="Perfil" className="home-profile-pic" />
         <h1>¡Bienvenido!</h1>
         <p>Desarrollador apasionado por aprender y crear experiencias digitales diferentes.</p>
-        <a href="/react-portfolio/services" className="home-button-discover">Descubrir más</a>
+        <Link to="/services" className="home-button-discover">Descubrir más</Link>
       </div>
     </section>
   );

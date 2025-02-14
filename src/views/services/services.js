@@ -1,5 +1,6 @@
 import React from "react";
 import "./services.css";
+import { Link } from "react-router-dom";
 
 const servicesData = [
   {
@@ -47,11 +48,11 @@ const Services = () => {
               <span className="service-category">{service.category}</span>
               <h2>{service.title}</h2>
               <p>{service.description}</p>
-              <a className="service-link" href={service.link}>
+              <Link className="service-link" to={service.link}>
                 <button className="service-button">
                   {service.button}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         ))}
