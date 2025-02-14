@@ -51,7 +51,7 @@ const Projects = () => {
             <h2>AlgoRitmo de Baile</h2>
             <p>
               Se está desarrollando la página web de un club de baile en la que se mostrarán los diferentes ritmos de baile que se imparten, 
-              así como los horarios e información. Se implementará un sistema de registro y pago en línea para los usuarios interesados en inscribirse a las clases con ayuda de tecnologías JS.
+              así como los horarios e información. Se implementará un sistema con ayuda de tecnologías JS.
             </p>
             <button className="project-button">¡Estamos trabajando en ella!</button>
           </div>

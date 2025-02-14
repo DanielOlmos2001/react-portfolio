@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const servicesData = [
   {
-    title: "Arquitectura de Experiencias.",
+    title: "Arquitectura de experiencias.",
     category: "Diseño UX/UI - Creación de Interfaces",
     description:
-      "Transformamos tus ideas en interfaces elegantes y funcionales, optimizadas para una experiencia de usuario inolvidable.",
+      "Transformamos tus ideas en interfaces elegantes y funcionales, optimizadas para una experiencia de usuario inolvidable para tus clientes.",
     button: "¡Mira estas vistas!",
     link: "https://www.figma.com/design/OzeGtEcLohOozcS8twj0rk/Matheando?node-id=0-1&t=akExgTl5OJ3dy3F8-1",
     image: require("../../assets/ux-design.jpg"),
@@ -16,7 +16,7 @@ const servicesData = [
     title: "Innovación y Desarrollo de Apps funcionales.",
     category: "Desarrollo Web - Web Apps",
     description:
-      "Elevamos el estándar de las aplicaciones web con soluciones personalizadas que impulsan el crecimiento de tu marca.",
+      "Elevamos el estándar de las aplicaciones web con soluciones personalizadas que impulsan el crecimiento de tu marca y tu presencia en línea.",
     button: "¡Mira este ejemplo!",
     link: "/projects/AppIneToJson",
     image: require("../../assets/web-dev.jpg"),
