@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const servicesData = [
   {
-    title: "Arquitectura de experiencias.",
+    title: "Arquitectura de mejores experiencias.",
     category: "Diseño UX/UI - Creación de Interfaces",
     description:
       "Transformamos tus ideas en interfaces elegantes y funcionales, optimizadas para una experiencia de usuario inolvidable para tus clientes.",

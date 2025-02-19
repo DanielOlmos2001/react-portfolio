@@ -88,7 +88,7 @@
 
 .project-content a {
     display: inline-block;
-    padding-top: 15px;
+    padding-top: 5px;
     color: #ffa200; /* Naranja intenso */
     text-decoration: none;
     font-weight: bold;
@@ -105,7 +105,8 @@
 /* 📌 BOTÓN DE PROYECTO */
 /* ----------------- */
 .project-button {
-    display: inline-block;
+    display: block;
+    margin-top: 15px;
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
@@ -162,5 +163,10 @@
 
     .project-reverse .project-content {
         text-align: center;
+    }
+
+    .project-button{
+        width: 100%;
+        margin-top: 15px;
     }
 }
