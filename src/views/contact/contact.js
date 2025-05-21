@@ -30,9 +30,9 @@ const Contact = () => {
         <h1>Contacto</h1>
         <img src={profile} alt="Foto de perfil" className="profile-image" />
         <p>
-          Soy estudiante de <b>Ingeniería en Sistemas Computacionales en ESCOM - IPN</b>.
-          Me apasiona el desarrollo web y la tecnología, complementando mi formación con
-          cursos en <b>EDteam</b> para mejorar mis habilidades en programación y diseño.
+          Consultor de Desarrollo Frontend JR, estudios en <b>Ingeniería en Sistemas Computacionales en ESCOM - IPN</b>.
+          Apasionado por el desarrollo web y la tecnología, complementando formación profesional con
+          capacitaciones en <b>EDteam</b> para mejorar habilidades en programación, diseño e implementaciones.
         </p>
 
         {/* Información de Contacto */}

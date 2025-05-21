@@ -17,8 +17,8 @@ const servicesData = [
     category: "Desarrollo Web - Web Apps",
     description:
       "Elevamos el estándar de las aplicaciones web con soluciones personalizadas que impulsan el crecimiento de tu marca y tu presencia en línea.",
-    button: "¡Mira este ejemplo!",
-    link: "/projects/AppIneToJson",
+    button: "¡Mira más!",
+    link: "/projects",
     image: require("../../assets/web-dev.jpg"),
   },
   {

@@ -113,8 +113,8 @@
     text-decoration: none;
     background: #61dafb;
     color: #121212;
-    border-radius: var(--border-radius);
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }

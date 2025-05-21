@@ -10,8 +10,6 @@ import Footer from "./generalComponents/footer/footer.js";
 import Home from "./views/home/home.js";
 import Services from "./views/services/services.js";
 import Projects from "./views/projects/projects.js";
-import AppIneToJson from "./views/projects/ineToJson/components/app/AppIneToJson.js";
-import Peticion from "./views/projects/ineToJson/components/peticion/peticion.js";
 import Contact from "./views/contact/contact.js";
 
 const App = () => {
@@ -38,8 +36,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/AppIneToJson" element={<AppIneToJson />} />
-          <Route path="/projects/AppIneToJson/peticion" element={<Peticion />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

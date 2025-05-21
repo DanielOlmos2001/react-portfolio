@@ -72,7 +72,7 @@
     color: white !important;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     text-align: center;
     display: inline-block;
     transition: background 0.3s ease-in-out;
@@ -97,7 +97,7 @@
     padding: 12px;
     font-size: 16px;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     resize: none;
@@ -115,7 +115,7 @@
     font-weight: bold;
     background: #61dafb;
     color: #121212;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
