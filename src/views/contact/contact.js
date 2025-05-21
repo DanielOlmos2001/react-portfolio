@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./contact.css";
 import { FaEnvelope, FaLinkedin, FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
 import profile from "../../assets/profile.png";
@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section className="contact animated-fade-in">
       <div className="contact-container">
         <h1>Contacto</h1>
         <img src={profile} alt="Foto de perfil" className="profile-image" />

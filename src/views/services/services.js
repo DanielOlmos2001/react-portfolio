@@ -1,4 +1,3 @@
-import React from "react";
 import "./services.css";
 import { Link } from "react-router-dom";
 
@@ -34,7 +33,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="services">
+    <section className="services animated-fade-in">
       <div className="services-header">
         <h1>Nuestros Servicios<span className="dot">.</span></h1>
         <p>Ofrecemos las soluciones perfectas para la revolución digital.</p>

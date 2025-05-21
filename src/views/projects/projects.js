@@ -1,4 +1,3 @@
-import React from "react";
 import "./projects.css";
 import project1 from "../../assets/juntadecabeza.jpg";
 import project2 from "../../assets/ineajson.jpg";
@@ -6,7 +5,7 @@ import project3 from "../../assets/algoritmodebaile.png";
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects animated-fade-in">
       <div className="projects-header">
         <h1>Proyectos<span className="dot">.</span></h1>
         <p>Explora nuestros proyectos y casos de éxito.</p>

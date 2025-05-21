@@ -1,11 +1,10 @@
-import React from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import profilePic from "../../assets/profile.png"; // Agrega una imagen en la carpeta assets
 
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home animated-fade-in">
       <div className="home-overlay"></div> {/* Fondo difuminado */}
       <div className="home-container">
         <img src={profilePic} alt="Perfil" className="home-profile-pic" />
