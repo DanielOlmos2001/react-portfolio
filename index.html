@@ -10,11 +10,18 @@
       (function () {
         const params = new URLSearchParams(window.location.search);
         const redirect = params.get("redirect");
+        const repo = "/react-portfolio";
+      
         if (redirect) {
-          window.history.replaceState(null, "", redirect);
+          window.history.replaceState(
+            null,
+            "",
+            repo + redirect
+          );
         }
       })();
     </script>
+
   </head>
   <body>
     <div id="root"></div>
