@@ -40,7 +40,7 @@
 }
 
 .aside nav ul li a:hover {
-    background: #61dafb; /* Rojo intenso */
+    background: #61dafb;
     color: white;
     box-shadow: 0 0 10px rgba(57, 190, 230, 0.5);
 }
