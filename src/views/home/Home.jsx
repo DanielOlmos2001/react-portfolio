@@ -22,7 +22,7 @@ function Home() {
         </p>
 
         <Link
-          to="/services"
+          to="https://drive.google.com/file/d/1z75l9rj3uI8irrmh_edJp6TKnFiZh5b0/view?usp=drive_link"
           className="home-button-discover"
         >
           Descubrir más
